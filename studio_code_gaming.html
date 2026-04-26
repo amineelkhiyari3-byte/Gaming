@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- ============================================
+     LA TÊTE DE LA PAGE (non visible à l'écran)
+     ============================================ -->
+<head>
+  <!-- Indique au navigateur que le texte est en français avec des accents -->
+  <meta charset="UTF-8">
+
+  <!-- Le titre qui apparaît dans l'onglet du navigateur -->
+  <title>Studio Code Gaming</title>
+
+  <!-- ---- LES STYLES CSS : c'est ici qu'on donne les couleurs et la mise en forme ---- -->
+  <style>
+
+    /* On applique un style général à TOUTE la page */
+    body {
+      background-color: #f4f4f4; /* Couleur de fond gris clair */
+      font-family: Arial, sans-serif; /* Police d'écriture */
+      color: #333; /* Couleur du texte : gris foncé */
+      margin: 0; /* Supprime l'espace autour de la page */
+    }
+
+    /* ------ L'EN-TÊTE en haut de la page ------ */
+    header {
+      text-align: center; /* Centre le contenu */
+      padding: 20px; /* Espace intérieur */
+      background-color: #f4f4f4;
+    }
+
+    /* Le titre principal "Studio Code Gaming" */
+    header h1 {
+      color: #ff6600; /* Orange, comme dans le modèle */
+      margin: 0;
+    }
+
+    /* ------ LA BARRE DE NAVIGATION (les liens du menu) ------ */
+    nav {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    /* Chaque lien dans le menu */
+    nav a {
+      text-decoration: none; /* Enlève le soulignement */
+      color: #333;
+      margin: 0 15px; /* Espace entre les liens */
+      font-weight: bold;
+    }
+
+    /* Quand on passe la souris sur un lien, il devient orange */
+    nav a:hover {
+      color: #ff6600;
+    }
+
+    /* ------ LE TRAIT HORIZONTAL sous le menu ------ */
+    hr {
+      border: none;
+      border-top: 1px solid #ccc; /* Une ligne grise fine */
+    }
+
+    /* ------ LE CONTENU PRINCIPAL au milieu de la page ------ */
+    main {
+      max-width: 900px; /* Largeur maximum */
+      margin: 0 auto; /* Centre le contenu horizontalement */
+      padding: 20px;
+    }
+
+    /* Le titre de section "Bienvenue sur Studio Code Gaming" */
+    main h2 {
+      font-size: 22px;
+      border-bottom: 2px solid #ff6600; /* Trait orange en dessous */
+      padding-bottom: 8px;
+    }
+
+    /* ------ UN ARTICLE (bloc d'actualité) ------ */
+    article {
+      margin-bottom: 30px; /* Espace entre les articles */
+    }
+
+    /* Le titre de chaque article en orange */
+    article h3 {
+      color: #ff6600;
+    }
+
+    /* L'image dans chaque article */
+    article img {
+      width: 260px; /* Largeur fixe */
+      border-radius: 8px; /* Coins arrondis */
+      display: block; /* L'image prend sa propre ligne */
+      margin-bottom: 8px;
+    }
+
+    /* ------ LE PIED DE PAGE en bas ------ */
+    footer {
+      text-align: center;
+      color: #aaa; /* Gris clair */
+      padding: 20px;
+      border-top: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+
+<!-- ============================================
+     LE CORPS DE LA PAGE (ce qui est visible)
+     ============================================ -->
+<body>
+
+  <!-- EN-TÊTE : le logo et le menu -->
+  <header>
+    <!-- h1 = le plus grand titre de la page -->
+    <h1>Studio Code Gaming</h1>
+
+    <!-- nav = la barre de navigation avec les liens -->
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#">Nouveautés</a>
+      <a href="#">Mon Compte</a>
+      <a href="#">À Propos</a>
+    </nav>
+  </header>
+
+  <!-- Un trait horizontal de séparation -->
+  <hr>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main>
+
+    <!-- h2 = titre de section (moins important que h1) -->
+    <h2>Bienvenue sur Studio Code Gaming</h2>
+
+    <!-- Un paragraphe de texte -->
+    <p>Toute l'actualité du jeu vidéo en un seul endroit.</p>
+
+    <!-- ---- ARTICLE 1 ---- -->
+    <article>
+      <!-- h3 = titre d'article (encore moins important) -->
+      <h3>Nouveau jeu de tir attendu pour cet été</h3>
+
+      <!--
+        img = une image
+        src = l'adresse de l'image (ici une image de remplacement pour l'exemple)
+        alt = texte de remplacement si l'image ne charge pas
+      -->
+      <img
+        src="https://placehold.co/260x160/0a0a2e/00cfff?text=Jeu+de+Tir"
+        alt="Jeu de tir futuriste"
+      >
+
+      <p>Le studio Nova Games annonce sa nouvelle production très attendue.</p>
+    </article>
+
+    <!-- ---- ARTICLE 2 ---- -->
+    <article>
+      <h3>Test : Aventure dans les étoiles</h3>
+      <img
+        src="https://placehold.co/260x160/1a0030/cc00ff?text=RPG+Spatial"
+        alt="RPG spatial"
+      >
+      <p>Un RPG spatial qui mérite vraiment le détour.</p>
+    </article>
+
+    <!-- ---- ARTICLE 3 ---- -->
+    <article>
+      <h3>Mise à jour majeure pour Pixel World</h3>
+      <img
+        src="https://placehold.co/260x160/1a3a00/66ff00?text=Pixel+World"
+        alt="Pixel World mise à jour"
+      >
+      <p>De nouveaux niveaux et un mode multijoueur sont disponibles.</p>
+    </article>
+
+  </main>
+
+  <!-- PIED DE PAGE -->
+  <footer>
+    &copy; 2026 Studio Code Gaming
+  </footer>
+
+</body>
+</html>
